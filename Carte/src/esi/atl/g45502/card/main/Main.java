@@ -5,8 +5,10 @@
  */
 package esi.atl.g45502.card.main;
 
-import esi.atl.g45502.card.Carte;
-import esi.atl.g45502.card.Deck;
+import esi.atl.g45502.card.model.Carte;
+import esi.atl.g45502.card.model.Deck;
+
+
 
 /**
  *

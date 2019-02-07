@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package esi.atl.g45502.card;
+package g45502.atl.blackjack.model;
 
 /**
  *
  * @author G45502
  */
-public enum Color {
-    CLUB, DIAMOND, HEART, SPADE;
+public enum Value {
+    ACE, TWO, THREE, FOUR,FIVE ,SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING
 }

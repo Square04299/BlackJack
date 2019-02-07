@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package esi.atl.g45502.card;
+package g45502.atl.blackjack.model;
 
 import java.util.ArrayList;
 import java.util.Collections;

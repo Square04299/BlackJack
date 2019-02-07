@@ -3,12 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package esi.atl.g45502.card;
+package g45502.atl.blackjack.model;
 
 /**
  *
  * @author G45502
  */
-public enum Value {
-    ACE, TWO, THREE, FOUR,FIVE ,SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING
+public interface Facade {
+    
+    public void add(Carte carte);
+    
+    public boolean isEmpty();
+    
+    public void clean();
 }
