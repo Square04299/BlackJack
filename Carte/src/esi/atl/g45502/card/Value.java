@@ -3,19 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package carte;
+package esi.atl.g45502.card;
 
 /**
  *
  * @author G45502
  */
-public class Carte {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+public enum Value {
+    ACE, TWO, THREE, FOUR,FIVE ,SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING
 }
