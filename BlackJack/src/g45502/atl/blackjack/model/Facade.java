@@ -10,10 +10,5 @@ package g45502.atl.blackjack.model;
  * @author G45502
  */
 public interface Facade {
-    
-    public void add(Carte carte);
-    
-    public boolean isEmpty();
-    
-    public void clean();
+    public Deck hit();
 }

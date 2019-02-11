@@ -12,30 +12,34 @@ import java.util.List;
  *
  * @author G45502
  */
-public class Player implements Facade{
-    private List<Carte> hand;
+public class Player{
+    private  List<Carte> hand;
+    private int score;
 
     public Player() {
         this.hand = new ArrayList<>();
+        this.score = 0;
     }
 
     public List<Carte> getHand() {
         return hand;
     }
 
-    @Override
-    public void add(Carte carte){
+    public int getScore() {
+        return score;
+    }
+
+    public void addCard(Carte carte){
+        if(carte == null){
+            throw new NullPointerException("tu ne donne pas de carte");
+        }
         hand.add(carte);
+        this.score += carte.getValue().getValue();
     }
     
-    @Override
-    public boolean isEmpty(){
-        return hand.isEmpty();
-    }
-    
-    @Override
     public void clean(){
         hand.clear();
+        score = 0;
     }
     
     

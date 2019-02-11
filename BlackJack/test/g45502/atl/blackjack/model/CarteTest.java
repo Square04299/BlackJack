@@ -5,14 +5,25 @@
  */
 package g45502.atl.blackjack.model;
 
+import org.junit.Test;
+import static org.junit.Assert.*;
+
 /**
  *
  * @author G45502
  */
-public class Game implements Facade{
-     
-    private Deck deck;
-    private Player player;
-    private Player bank;
+public class CarteTest {
+    
+    public CarteTest() {
+    }
+
+    @Test
+    public void testGetColor() {
+        
+    }
+
+    @Test
+    public void testGetValue() {
+    }
     
 }
