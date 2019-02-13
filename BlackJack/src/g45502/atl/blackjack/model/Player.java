@@ -13,16 +13,23 @@ import java.util.List;
  * @author G45502
  */
 public class Player{
-    private  List<Carte> hand;
+    
+    private String name;
+    private List<Carte> hand;
     private int score;
 
-    public Player() {
+    public Player(String name) {
+        this.name = name;
         this.hand = new ArrayList<>();
         this.score = 0;
     }
 
     public List<Carte> getHand() {
         return hand;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public int getScore() {

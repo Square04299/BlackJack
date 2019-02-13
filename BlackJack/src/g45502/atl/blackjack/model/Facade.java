@@ -10,5 +10,8 @@ package g45502.atl.blackjack.model;
  * @author G45502
  */
 public interface Facade {
-    public Deck hit();
+    public void hit(Player p);
+    public Player getWinner();
+    public void newRound();
+    public void stand();
 }
