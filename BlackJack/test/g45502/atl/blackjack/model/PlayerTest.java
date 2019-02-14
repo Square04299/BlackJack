@@ -20,7 +20,7 @@ public class PlayerTest {
 
     @Test
     public void testAddCard() {
-        Player p = new Player();
+        Player p = new Player("Christopher");
         Carte expected = new Carte(Color.CLUB, Value.ACE);
         p.addCard(expected);
         Carte carte = p.getHand().get(0);
@@ -30,7 +30,7 @@ public class PlayerTest {
 
     @Test
     public void testClean() {
-        Player p = new Player();
+        Player p = new Player("Christopher");
         Carte carte = new Carte(Color.CLUB, Value.ACE);
         p.addCard(carte);
         p.clean();
