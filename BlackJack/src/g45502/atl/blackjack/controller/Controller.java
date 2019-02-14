@@ -9,7 +9,7 @@ import g45502.atl.blackjack.model.Game;
 import g45502.atl.blackjack.vue.Vue;
 
 /**
- *
+ *Will create and manage the Game and Vue
  * @author G45502
  */
 public class Controller {
@@ -17,11 +17,19 @@ public class Controller {
     private Game game;
     private Vue vue;
 
+    /**
+     *Builder of the Object Controller
+     * @param game the information of the player, cards
+     * @param vue Display what the user will see
+     */
     public Controller(Game game, Vue vue) {
         this.game = game;
         this.vue = vue;
     }
     
+    /**
+     *Will start the game of BlackJack first function to call
+     */
     public void startBlackjack(){
         do {            
             game.newRound();

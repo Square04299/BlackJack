@@ -8,15 +8,17 @@ package g45502.atl.blackjack.model;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import javafx.print.Collation;
 
 /**
- *
+ *Collection of cards
  * @author G45502
  */
 public class Deck {
     private List<Carte> cards;
 
+    /**
+     *Builder of the Object Deck
+     */
     public Deck() {
         cards = new ArrayList<>();
         for (Color color : Color.values()) {
@@ -27,21 +29,19 @@ public class Deck {
         }
     }
     
+    /**
+     *Will randomize the cards in the deck
+     */
     public void shuffle(){
         Collections.shuffle(cards);
     }
     
-    boolean isEmplty(){
-        return cards.isEmpty();
-    }
-    
+    /**
+     *Will remove a card from the deck
+     * @return the card that have been removed from the deck
+     */
     public Carte hit(){
-        //test verifier si il y a encore des erreurs
         return cards.remove(0);
-    }
-    
-    int size(){
-        return cards.size();
     }
 
     @Override

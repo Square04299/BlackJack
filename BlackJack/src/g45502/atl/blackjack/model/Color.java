@@ -6,9 +6,28 @@
 package g45502.atl.blackjack.model;
 
 /**
- *
+ *Color of the cards
  * @author G45502
  */
 public enum Color {
-    CLUB, DIAMOND, HEART, SPADE;
+
+    /**
+     *Color Black
+     */
+    CLUB,
+
+    /**
+     *Color red
+     */
+    DIAMOND,
+
+    /**
+     *Color red
+     */
+    HEART,
+
+    /**
+     *Color Black
+     */
+    SPADE;
 }

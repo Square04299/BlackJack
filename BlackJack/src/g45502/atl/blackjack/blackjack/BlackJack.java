@@ -10,7 +10,7 @@ import g45502.atl.blackjack.model.Game;
 import g45502.atl.blackjack.vue.Vue;
 
 /**
- *
+ *Main will start the programme
  * @author G45502
  */
 public class BlackJack {

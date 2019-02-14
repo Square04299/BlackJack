@@ -6,12 +6,75 @@
 package g45502.atl.blackjack.model;
 
 /**
- *
+ *Value of the card
  * @author G45502
  */
 public enum Value {
-    ACE(1), TWO(2), THREE(3), FOUR(4), FIVE(5) , SIX(6), SEVEN(7), EIGHT(8),
-    NINE(9), TEN(10), JACK(10), QUEEN(10), KING(10);
+
+    /**
+     *Value of 1
+     */
+    ACE(1),
+
+    /**
+     *Value of 2
+     */
+    TWO(2),
+
+    /**
+     *Value of 3
+     */
+    THREE(3),
+
+    /**
+     *Value of 4
+     */
+    FOUR(4),
+
+    /**
+     *Value of 5
+     */
+    FIVE(5) ,
+
+    /**
+     *Value of 6
+     */
+    SIX(6),
+
+    /**
+     *Value of 7
+     */
+    SEVEN(7),
+
+    /**
+     *Value of 8
+     */
+    EIGHT(8),
+
+    /**
+     *Value of 9
+     */
+    NINE(9),
+
+    /**
+     *Value of 10
+     */
+    TEN(10),
+
+    /**
+     *Value of 10 
+     */
+    JACK(10),
+
+    /**
+     *Value of 10
+     */
+    QUEEN(10),
+
+    /**
+     *Value of 10
+     */
+    KING(10);
     
     private final int value;
 
@@ -19,6 +82,10 @@ public enum Value {
         this.value = value;
     }
 
+    /**
+     *Getter of the attribute Value
+     * @return the value of the card
+     */
     public int getValue() {
         return value;
     }
